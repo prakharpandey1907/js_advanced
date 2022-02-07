@@ -1,11 +1,11 @@
 var result;
-function cal() {
+function calc() {
     let a = document.getElementById('age').value;
     let b = document.getElementById('weight').value;
     let name = document.getElementById('name').value
     result = val(a,b,name);
    
-   display(result,b,a,name);
+   displaydata(result,b,a,name);
 }
 function val(a,b,name){
     let v;
@@ -78,7 +78,7 @@ function logic(a, b) {
 
 }
 
-function display(result,b,a,name){
+function displaydata(result,b,a,name){
     if( result == 0)
     {
         document.getElementById('res').innerHTML= name+'!!!'+'Your weight perfect.';
